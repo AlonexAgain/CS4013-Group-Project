@@ -24,7 +24,7 @@ public class CheckIODate {
         month = Integer.valueOf(input[1]);
         year = Integer.valueOf(input[2]);
     }
-
+    
     public void checkOutDate(String s) {
         String[] input = s.split("/");
         day = Integer.valueOf(input[0]);
