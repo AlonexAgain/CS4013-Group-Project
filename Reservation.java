@@ -1,109 +1,46 @@
-import java.util.StringTokenizer;
-
-// Author: Darragh Walsh
-// Student Number: 20244053
-// This class...
-
-/**
- * A Reservation
- */
+import java.util.Scanner;
+import java.util.Random;
 
 public class Reservation {
 
-    private String description;
-    private CheckIODate date;
-    private CheckIOTime from;
-    private CheckIOTime till;
-    
+    public void nameUser(){
 
-    public boolean fallsOn(CheckIODate x) {
-        return (x.equals(date));
+        Scanner scanr = new Scanner(System.in);
+
+        String name;
+
+        System.out.print("Name: ");
+        name = scanr.nextLine();
+
+        System.out.println("Name: " + name);
+
+        scanr.close();
     }
 
-    public String format() {
-        String s = "Date: " + date.toString() + "\n" + "Time From: " + from.toString() + "\n" + "Time Till: " + till.toString() + "\n" + "Description: " + description;
-        return s;
-    }
-    
-    public Reservation(String s) {
-        String[] input=s.split(" ");
-        for(int i=0;i<input.length-3;i++){
-            description+=input[i]+" ";
-        }
-        till = new CheckIOTime(input[input.length-1]);
-        from = new CheckIOTime(input[input.length-2]);
-        date = new CheckIODate(input[input.length-3]);
-    }
-    
-    
-    
-    public boolean equals(Object obj) {
-        if(obj==null || !(obj instanceof Reservation)){
-            return false;
-        }
-        else if(this==obj){
-            return true;
-        }
-        Reservation x = ((Reservation)obj);
-        return (x.date.equals(date) && x.from.equals(from) && x.till.equals(till));
-    }
-    
-    
-    
-    /*
-     *variables for the customer details     
-     */
-	private String firstName;
-	private String lastName;
-	private String phoneNo;
-	private String email;
-	
-	/*
-	 *Create the set and get operators for each parameter  
-	 */
-	
-	public String getFirstName() {
-		return firstName;
-	}
-	
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	
-	public String getLastName() {
-		return lastName;
-	}
-	
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	
-	public String getPhoneNo() {
-		return phoneNo;
-	}
-	
-	public void setPhoneNo(String phoneNo) {
-		this.phoneNo = phoneNo;
-	}
-	
-	public String getEmail() {
-		return email;
-	}
-	
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public void reservationID(){
 
-	/*
-	 * An overrided toString() method to format the customers information0
-	 */
-	
-	@Override
-	public String toString() {
-		return "First Name: " + this.firstName + "\n"
-				+ "Last Name: " + this.lastName + "\n"
-				+ "Phone Number: " + this.phoneNo + "\n"
-				+ "Email: " + this.email + "\n";
-	}
-	
+        Random ranID = new Random();
+
+        int radNumbers;
+
+       
+        // this is a 10 digit unique reservation ID
+
+        String numRan[] = new String[10];
+
+        for(int i=0; i<10; i++){
+            //Random Number from 1-10
+            radNumbers = ranID.nextInt(10);
+            
+            //String array for random numbers
+            numRan[i] = Integer.toString(radNumbers);
+        }
+        
+        System.out.println("Your Reservation ID is: " + numRan[0] + numRan[1] + numRan[2] + numRan[3] + numRan[4] + numRan[5]
+         + numRan[6] + numRan[7] + numRan[8] + numRan[9]);
+
+        
+        
+    }
+
 }
