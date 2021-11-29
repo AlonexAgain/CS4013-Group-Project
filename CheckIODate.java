@@ -31,7 +31,7 @@ public class CheckIODate {
         month = Integer.valueOf(input[1]);
         year = Integer.valueOf(input[2]);
     }
-
+    
     public boolean equals(Object obj) {
         if(obj==null || !(obj instanceof CheckIODate)){
             return false;
