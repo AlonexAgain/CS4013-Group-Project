@@ -1,5 +1,3 @@
-//Name: Saw Pu
-//ID: 20238436
 
 import java.util.Scanner;
 
@@ -21,14 +19,6 @@ public class MainMenu {
 
     }
 
-    public static void roomPrice(){
-        System.out.println("--------------");
-        System.out.println("Room 1 is $40");
-        System.out.println("Room 2 is $50");
-        System.out.println("Room 3 is $60");
-        System.out.println("Room 4 is $70");
-        System.out.println("--------------");
-    }
 
     public static void contactInformation(){
         System.out.println(" ");
@@ -50,6 +40,7 @@ public class MainMenu {
 
     public static void main(String[] args){
 
+        
         //User input
         int userInput;
 
@@ -61,12 +52,10 @@ public class MainMenu {
 
         //Exit the menu
         int Exit = options[options.length-1];
-        
+
         //This will display the menu from displayMenu class
         displayMenu(options, optionMenu);
 
-        
-        
         //Scanner setup
         Scanner scan = new Scanner(System.in);
 
@@ -76,11 +65,15 @@ public class MainMenu {
         //Check users value and looping main menu
         while(userInput != Exit){ 
             if (userInput == options[0]){
-                System.out.println("Book A Room");
+                Reservation reservation1 = new Reservation();
+                reservation1.nameUser();
+                
+                Reservation reservationID = new Reservation();
+                reservationID.reservationID();
 
             }
             else if (userInput == options[1]){
-                roomPrice();
+                System.out.println("Example");
 
             }
             else if (userInput == options[2]){
@@ -89,8 +82,6 @@ public class MainMenu {
             else if (userInput == options[3]){
                 System.out.println("HERE is where you cancel your booking");
             }
-            
-           
 
             //Main Menu Again
             displayMenu(options, optionMenu);
