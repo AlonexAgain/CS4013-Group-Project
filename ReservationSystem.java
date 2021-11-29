@@ -1,5 +1,7 @@
 import java.io.IOException;
 
+// This class will invoke and run the ReservationMenu.java class.
+
 /**
  * A system to manage reservations.
  */
