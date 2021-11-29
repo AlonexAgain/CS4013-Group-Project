@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 public class MainMenu {
@@ -52,10 +53,10 @@ public class MainMenu {
         int userInput;
 
         // MainMenu Data Array
-        int options[] = {1,2,3,4};
+        int options[] = {1,2,3,4,5};
 
         //String array for choices
-        String optionMenu[] = {"Book a room", "Check Prices", "Contact Infomation", "Exit"};
+        String optionMenu[] = {"Book a room", "Check Prices", "Contact Infomation", "Cancellation", "Exit"};
 
         //Exit the menu
         int Exit = options[options.length-1];
@@ -82,8 +83,13 @@ public class MainMenu {
 
             }
             else if (userInput == options[2]){
-                contactInformation();
+                contactInformation(); 
             }
+            else if (userInput == options[3]){
+                System.out.println("HERE is where you cancel your booking");
+            }
+            
+           
 
             //Main Menu Again
             displayMenu(options, optionMenu);
