@@ -1,12 +1,11 @@
+
 import java.util.Scanner;
 
-public class ReservationsMenu {
-    public static void main(String[] args){
-     
-        //User input
-        int userInput;
-        
-        //This will display the menu
+public class MainMenu {
+
+    //This will display the menu
+    public static void displayMenu(){
+
         System.out.println("BestSolutions Ltd");
         System.out.println("===================");
         System.out.println("1. Book A Room");
@@ -15,26 +14,75 @@ public class ReservationsMenu {
         System.out.println("4. Exit");
         System.out.println("===================");
         System.out.print("Enter Choice: ");
-        
+
+    }
+
+    public static void roomPrice(){
+        System.out.println("--------------");
+        System.out.println("Room 1 is $40");
+        System.out.println("Room 2 is $50");
+        System.out.println("Room 3 is $60");
+        System.out.println("Room 4 is $70");
+        System.out.println("--------------");
+    }
+
+    public static void contactInformation(){
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("Welcome to BestSolutions Ltd");
+        System.out.println("-----------------------------");
+        System.out.println("Here at BestSolutions Ltd we provide the best");
+        System.out.println("rooms for our customers");
+        System.out.println("    ");
+        System.out.println("Phone Number: 0871847534");
+        System.out.println("Email Address: Bestsolutionsltd@gmail.com");
+        System.out.println(" ");
+        System.out.println("Feel free to call us at opening ours from 8am-10pm");
+        System.out.println("from Monday to Friday");
+        System.out.println(" ");
+        System.out.println(" ");
+    }
+
+    public static void main(String[] args){
+
+        //User input
+        int userInput;
+
+        //This will display the menu from displayMenu class
+        displayMenu();
+
         //Scanner setup
         Scanner scan = new Scanner(System.in);
-        
+
         // Get users input
         userInput = scan.nextInt();
-        
-        //Check users value
-        if (userInput == 1){
-            System.out.println("Book A Room");
+
+
+        //Check users value and looping main menu
+
+        while(userInput != 4){ 
+
+            if (userInput == 1){
+                System.out.println("Book A Room");
+
+            }
+            else if (userInput == 2){
+                roomPrice();
+
+            }
+            else if (userInput == 3){
+                contactInformation();
+            }
+
+            //Main Menu Again
+            displayMenu();
+
+            userInput = scan.nextInt();
+
+            System.out.println(" ");
+
             
         }
-        else if (userInput == 2){
-            System.out.println("Check Prices");
-        }
-        else if (userInput == 3){
-            System.out.println("Contact Information");
-        }
-        else if (userInput == 4){
-            System.out.println("You have exited the menu!");
-        }
+        System.out.println("Thank you for booking with BestSolutions Ltd");
     }
 }
