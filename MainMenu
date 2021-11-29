@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class ReservationsMenu {
+    public static void main(String[] args){
+     
+        //User input
+        int userInput;
+        
+        //This will display the menu
+        System.out.println("BestSolutions Ltd");
+        System.out.println("===================");
+        System.out.println("1. Book A Room");
+        System.out.println("2. Check Prices");
+        System.out.println("3. Contact Infomation");
+        System.out.println("4. Exit");
+        System.out.println("===================");
+        System.out.print("Enter Choice: ");
+        
+        //Scanner setup
+        Scanner scan = new Scanner(System.in);
+        
+        // Get users input
+        userInput = scan.nextInt();
+        
+        //Check users value
+        if (userInput == 1){
+            System.out.println("Book A Room");
+            
+        }
+        else if (userInput == 2){
+            System.out.println("Check Prices");
+        }
+        else if (userInput == 3){
+            System.out.println("Contact Information");
+        }
+        else if (userInput == 4){
+            System.out.println("You have exited the menu!");
+        }
+    }
+}
