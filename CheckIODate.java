@@ -1,5 +1,7 @@
 import java.util.StringTokenizer;
 
+// This class...
+
 /**
  * A hotel reservation check in and check out date.
  */
