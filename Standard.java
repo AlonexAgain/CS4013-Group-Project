@@ -1,3 +1,6 @@
+//Name: Saw Pu
+//ID: 20238436
+
 import java.util.Scanner;
 
 public class Standard {
