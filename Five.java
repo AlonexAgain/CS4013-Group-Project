@@ -1,7 +1,9 @@
+package team18;
+
 import java.util.Scanner;
 
 public class Five {
-    public static void displayMenu2(int options[], String optionMenu[], double prices[] ){
+    public static void displayMenu2(int options[], String optionMenu[]){
         System.out.println("                   ");
         System.out.println("BestSolutions Ltd");
         System.out.println("===================");
@@ -13,8 +15,7 @@ public class Five {
         //Loop throught the menu options from the array
         for(int i = 0; i < options.length-1; i++){
 
-            //"%.2f" will format the prices to 2 decimal points
-            System.out.printf("%d. %s \t %.2f\n", options[i], optionMenu[i], prices[i]);
+            System.out.printf("%d. %s \t \n", options[i], optionMenu[i]);
         }
 
         // Prints exit option, "options[options.length-1]" this will print the last option in the option array.
@@ -36,16 +37,14 @@ public class Five {
         int options[] = {1,2,3,4,5};
 
         //String array for choices
-        String optionMenu[] = {"Deluxe Room", "Deluxe Twin", 
+        String optionMenu[] = {"Deluxe Double", "Deluxe Twin", 
                 "Deluxe Single", "Deluxe Family","Exit"};
 
-        //Prices for Rooms
-        double redPrices[] = {75,75,70,80};
         //Exit the menu
         int Exit = options[options.length-1];
 
         //This will display the menu from displayMenu class
-        displayMenu2(options, optionMenu, redPrices);
+        displayMenu2(options, optionMenu);
 
         //Scanner setup
         Scanner scan = new Scanner(System.in);
@@ -56,18 +55,18 @@ public class Five {
         //Check users value and looping main menu
 
         if (userInput == options[0]){
-            System.out.println(optionMenu[0] + " = " + redPrices[0]);
+            System.out.println("Your chosen room is the: " + optionMenu[0]);
 
         }
         else if (userInput == options[1]){
 
-            System.out.println(optionMenu[1] + " = " + redPrices[1]);
+            System.out.println("Your chosen room is the: " + optionMenu[1]);
         }
         else if (userInput == options[2]){
-            System.out.println(optionMenu[2] + " = " + redPrices[2]);
+            System.out.println("Your chosen room is the: " + optionMenu[2]);
         }
         else if (userInput == options[3]){
-            System.out.println(optionMenu[3] + " = " + redPrices[3]);
+            System.out.println("Your chosen room is the: " + optionMenu[3]);
         }
         else if (userInput == options[4]){
             System.out.println("Goodbye");
@@ -75,7 +74,7 @@ public class Five {
 
 
 
-        System.out.println(" ");
+        System.out.println("");
 
         System.out.println("Thank you for booking with BestSolutions Ltd");
     }
