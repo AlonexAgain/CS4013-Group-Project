@@ -77,7 +77,7 @@ public class Reservation {
        	
        	 System.out.print("Phone No: ");
             phoneNo = scanr.nextLine();
-            this.setEmail(phoneNo);
+            this.setPhoneNo(phoneNo);
             System.out.println("Phone No: " + phoneNo);
             
             scanr.close();
