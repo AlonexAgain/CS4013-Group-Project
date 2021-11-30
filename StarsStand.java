@@ -1,3 +1,5 @@
+package team18;
+
 import java.util.Scanner;
 
 public class StarsStand {
@@ -18,18 +20,18 @@ public class StarsStand {
         
         if (starc == 1)
         {
-            Five five5 = new Five();
+            FiveStand five5 = new FiveStand();
             five5.standFive();
             
         }
         else if(starc == 2)
         {
-            Four four4 = new Four();
+            FourStand four4 = new FourStand();
             four4.standFour();
         }
         else
         {
-            Three three3 = new Three();
+            ThreeStand three3 = new ThreeStand();
             three3.standThree();
         }
         
