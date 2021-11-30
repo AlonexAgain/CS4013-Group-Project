@@ -66,17 +66,29 @@ public class MainMenu {
         //Check users value and looping main menu
         while(userInput != Exit){ 
             if (userInput == options[0]){
+                
+                Room selectHot = new Room();
+                selectHot.selectHotel();
+                
+                Room selectRom = new Room();
+                selectRom.selectRoom();
+                
+                AP ap1 = new AP();
+                ap1.apRates();
+                
                 Reservation reservation1 = new Reservation();
                 reservation1.nameUser();
-                
-                Reservation reservationID = new Reservation();
-                reservationID.reservationID();
-                
+
                 Reservation emailUs = new Reservation();
                 emailUs.emailUser();
                 
                 Reservation phoneNum = new Reservation();
                 phoneNum.phoneUser();
+                
+                
+                
+                Reservation reservationID = new Reservation();
+                reservationID.reservationID();
 
             }
             else if (userInput == options[1]){
