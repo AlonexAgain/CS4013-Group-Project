@@ -10,9 +10,11 @@ public class Reservation {
         String name;
 
         System.out.print("Name: ");
-        name = scanr.nextLine();
+        name = scanr.nextLine().toUpperCase();;
+        
 
         System.out.println("Name: " + name);
+        
 
         scanr.close();
     }
