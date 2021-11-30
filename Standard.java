@@ -84,7 +84,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -147,7 +147,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -210,7 +210,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -273,7 +273,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -336,7 +336,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -399,7 +399,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -462,7 +462,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -525,7 +525,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -588,7 +588,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
@@ -651,7 +651,7 @@ public class Standard {
             System.out.println(optionMenu[6] + " = " + redPrices[6]);
         }
         else if (userInput == options[7]){
-            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+            System.out.println(optionMenu[7] + " = " + redPrices[7]);
         }
         
     
