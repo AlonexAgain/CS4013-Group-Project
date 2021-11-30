@@ -56,14 +56,18 @@ public class Four {
 
         if (userInput == options[0]){
             System.out.println("Your chosen room is the: " + optionMenu[0]);
-
+            Standard EDstand = new Standard();
+            EDstand.standED();
         }
         else if (userInput == options[1]){
-
             System.out.println("Your chosen room is the: " + optionMenu[1]);
+            Standard ETstand = new Standard();
+            ETstand.standET();
         }
         else if (userInput == options[2]){
             System.out.println("Your chosen room is the: " + optionMenu[2]);
+            Standard ESstand = new Standard();
+            ESstand.standES();
         }
         else if (userInput == options[3]){
             System.out.println("Goodbye");

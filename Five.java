@@ -3,6 +3,9 @@ package team18;
 import java.util.Scanner;
 
 public class Five {
+	
+
+	
     public static void displayMenu2(int options[], String optionMenu[]){
         System.out.println("                   ");
         System.out.println("BestSolutions Ltd");
@@ -56,17 +59,24 @@ public class Five {
 
         if (userInput == options[0]){
             System.out.println("Your chosen room is the: " + optionMenu[0]);
-
+            Standard DDstand = new Standard();
+            DDstand.standDD();
         }
         else if (userInput == options[1]){
 
             System.out.println("Your chosen room is the: " + optionMenu[1]);
+            Standard DTstand = new Standard();
+            DTstand.standDT();
         }
         else if (userInput == options[2]){
             System.out.println("Your chosen room is the: " + optionMenu[2]);
+            Standard DSstand = new Standard();
+            DSstand.standDS();
         }
         else if (userInput == options[3]){
             System.out.println("Your chosen room is the: " + optionMenu[3]);
+            Standard DFstand = new Standard();
+            DFstand.standDF();
         }
         else if (userInput == options[4]){
             System.out.println("Goodbye");
