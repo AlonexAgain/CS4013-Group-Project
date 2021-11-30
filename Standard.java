@@ -1,6 +1,3 @@
-//Name: Saw Pu
-//ID: 20238436
-
 import java.util.Scanner;
 
 public class Standard {
@@ -12,7 +9,6 @@ public class Standard {
         System.out.println("You have selected our Standard Rates");
         System.out.println("                   ");
         System.out.println("===================");
-        
 
         //Loop throught the menu options from the array
         for(int i = 0; i < options.length-1; i++){
@@ -31,23 +27,20 @@ public class Standard {
 
     }
 
-    public static void main(String[] args){
+    public void standDD(){
 
         //User input
         int userInput;
 
         // MainMenu Data Array
-        int options[] = {1,2,3,4,5,6,7,8,9,10,11};
+        int options[] = {1,2,3,4,5,6,7};
 
         //String array for choices
-        String optionMenu[] = {"Deluxe Room", "Deluxe Twin", 
-                "Deluxe Single", "Deluxe Family", "Executive Double", 
-                "Executive Twin", "Executive Single", "Classic Double", 
-                "Classic Twin", "Classic Single" ,"Exit"};
+        String optionMenu[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+        
 
         //Prices for Rooms
-        double redPrices[] = {75,75,70,80,70,
-                70,65,65,65,50};
+        double redPrices[] = {75,75,75,80,90,90,75};
         //Exit the menu
         int Exit = options[options.length-1];
 
@@ -61,52 +54,38 @@ public class Standard {
         userInput = scan.nextInt();
 
         //Check users value and looping main menu
-        while(userInput != Exit){ 
-            if (userInput == options[0]){
-                System.out.println(optionMenu[0] + " = " + redPrices[0]);
 
-            }
-            else if (userInput == options[1]){
-
-                System.out.println(optionMenu[1] + " = " + redPrices[1]);
-            }
-            else if (userInput == options[2]){
-                System.out.println(optionMenu[2] + " = " + redPrices[2]);
-            }
-            else if (userInput == options[3]){
-                System.out.println(optionMenu[3] + " = " + redPrices[3]);
-            }
-            else if (userInput == options[4]){
-                System.out.println(optionMenu[4] + " = " + redPrices[4]);
-            }
-            else if (userInput == options[5]){
-                System.out.println(optionMenu[5] + " = " + redPrices[5]);
-            }
-            else if (userInput == options[6]){
-                System.out.println(optionMenu[6] + "=" + redPrices[6]);
-            }
-            else if (userInput == options[7]){
-                System.out.println(optionMenu[7] + " = " + redPrices[7]);
-            }
-            else if (userInput == options[8]){
-                System.out.println(optionMenu[8] + " = " + redPrices[8]);
-            }
-            else if (userInput == options[9]){
-                System.out.println(optionMenu[9] + " = " + redPrices[9]);
-            }
-
-            else if (userInput == options[10]){
-                System.out.println(optionMenu[10] + " = " + redPrices[10]);
-            }
-
-            //Main Menu Again
-            displayMenu2(options, optionMenu, redPrices);
-
-            userInput = scan.nextInt();
-
-            System.out.println(" ");
+        if (userInput == options[0]){
+            System.out.println(optionMenu[0] + " = " + redPrices[0]);
 
         }
-        System.out.println("Thank you for booking with BestSolutions Ltd");
+        else if (userInput == options[1]){
+
+            System.out.println(optionMenu[1] + " = " + redPrices[1]);
+        }
+        else if (userInput == options[2]){
+            System.out.println(optionMenu[2] + " = " + redPrices[2]);
+        }
+        else if (userInput == options[3]){
+            System.out.println(optionMenu[3] + " = " + redPrices[3]);
+        }
+        else if (userInput == options[4]){
+            System.out.println(optionMenu[4] + " = " + redPrices[4]);
+        }
+        else if (userInput == options[5]){
+            System.out.println(optionMenu[5] + " = " + redPrices[5]);
+        }
+        else if (userInput == options[6]){
+            System.out.println(optionMenu[6] + " = " + redPrices[6]);
+        }
+        else if (userInput == options[7]){
+            System.out.println(optionMenu[6] + " = " + redPrices[7]);
+        }
+        
+    
+        System.out.println(" ");
+        System.out.println("Please Enter Your Details");
     }
 }
+
+
