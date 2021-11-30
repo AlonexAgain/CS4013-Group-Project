@@ -65,6 +65,8 @@ public class Reservation {
              email = scanr.nextLine().toUpperCase();
              this.setEmail(email);
              System.out.println("Email: " + email);
+             
+             scanr.close();
         }
         
         /*
@@ -77,6 +79,8 @@ public class Reservation {
             phoneNo = scanr.nextLine();
             this.setEmail(phoneNo);
             System.out.println("Phone No: " + phoneNo);
+            
+            scanr.close();
        }
 
         
