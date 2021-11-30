@@ -6,6 +6,12 @@ public class Reservation {
     private String name;
     private String email;
     private String phoneNo;
+    
+    private String description;
+    private CheckIODate dateFrom;
+    // private CheckIODate dateTill;
+    private CheckIOTime timeFrom;
+    private CheckIOTime timeTill;
 
     public void nameUser(){
 
@@ -70,6 +76,37 @@ public class Reservation {
         
     }
 
+    public boolean fallsOn(CheckIODate x) {
+        return (x.equals(dateFrom));
+    }
+
+    public String format() {
+        String s = "Check in date: " + dateFrom.toString() + " Check in time: " + timeFrom.toString() + " Check out time: " + timeTill.toString() + " Description: " + description;
+        return s;
+    }
+    
+    public Reservation(String s) {
+        String[] input=s.split(" ");
+        for(int i=0;i<input.length-3;i++){
+            description+=input[i]+" ";
+        }
+        timeTill = new CheckIOTime(input[input.length-1]);
+        timeFrom = new CheckIOTime(input[input.length-2]);
+        dateFrom = new CheckIODate(input[input.length-3]);
+        //dateTill = new CheckIODate(input[input.length-4]);
+    }
+    
+    public boolean equals(Object obj) {
+        if(obj==null || !(obj instanceof Reservation)){
+            return false;
+        }
+        else if(this==obj){
+            return true;
+        }
+        Reservation x = ((Reservation)obj);
+        return (x.dateFrom.equals(dateFrom) && x.timeFrom.equals(timeFrom) && x.timeTill.equals(timeTill));
+    }
+    
     public String getName() {
         return name;
     }
