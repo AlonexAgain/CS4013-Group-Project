@@ -5,7 +5,8 @@ public class MainMenu {
 
     //This will display the menu
     public static void displayMenu(int options[], String optionMenu[] ){
-
+        System.out.println("                   ");
+        System.out.println("===================");
         System.out.println("BestSolutions Ltd");
         System.out.println("===================");
 
@@ -21,8 +22,8 @@ public class MainMenu {
 
 
     public static void contactInformation(){
-        System.out.println(" ");
-        System.out.println(" ");
+        
+        System.out.println("-----------------------------");
         System.out.println("Welcome to BestSolutions Ltd");
         System.out.println("-----------------------------");
         System.out.println("Here at BestSolutions Ltd we provide the best");
@@ -70,6 +71,12 @@ public class MainMenu {
                 
                 Reservation reservationID = new Reservation();
                 reservationID.reservationID();
+                
+                Reservation emailUs = new Reservation();
+                emailUs.emailUser();
+                
+                Reservation phoneNum = new Reservation();
+                phoneNum.phoneUser();
 
             }
             else if (userInput == options[1]){
